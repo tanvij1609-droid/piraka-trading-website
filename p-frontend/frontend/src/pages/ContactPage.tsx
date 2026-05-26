@@ -27,7 +27,7 @@ export default function ContactPage() {
     setError('');
 
     try {
-      await axios.post("http://localhost:5000/api/inquiry", {
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/inquiry`, {
       name: form.name.trim(),
       phone: form.phone.trim(),
       email: form.email.trim(),
