@@ -42,9 +42,11 @@ router.post("/inquiry", async (req, res) => {
     });
 
     res.status(201).json({ success: true, message: "Inquiry saved" });
-  } catch (error) {
-    res.status(500).json({ success: false, message: error.message });
-  }
+  } 
+    catch (error) {
+      console.log(error);
+      res.status(500).json({ error: error.message });
+    }
 });
 
 
