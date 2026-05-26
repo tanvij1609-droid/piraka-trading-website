@@ -2,6 +2,35 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import bgProduct from '../all-images/bgproduct.png'
 
+import SW1 from '../all-images/sanitaryware-1.webp'
+import SW2 from '../all-images/sanitaryware-2.jpg'
+import SW3 from '../all-images/sanitaryware-3.jpg'
+import SW4 from '../all-images/sanitaryware-4.jpg'
+import SW5 from '../all-images/sanitaryware-5.jpg'
+
+import P1 from '../all-images/pipe-1.jpg'
+import P2 from '../all-images/pipe-2.jpg'
+import P3 from '../all-images/pipe-3.jpg'
+import P4 from '../all-images/pipe-4.png'
+
+import F1 from '../all-images/fitting-1.jpg'
+import F2 from '../all-images/fitting-2.jpg'
+import F3 from '../all-images/fitting-3.png'
+import F4 from '../all-images/fitting-4.png'
+
+import B1 from '../all-images/bathroom-1.webp'
+import B2 from '../all-images/bathroom-2.webp'
+import B3 from '../all-images/bathroom-3.jpg'
+import B4 from '../all-images/bathroom-4.jpg'
+import B5 from '../all-images/bathroom-5.jpg'
+
+import H1 from '../all-images/hardware-1.webp'
+import H2 from '../all-images/hardware-2.jpg'
+
+import T1 from '../all-images/tank-1.jpg'
+import T2 from '../all-images/tank-2.jpg'
+import T3 from '../all-images/tank-3.jpg'
+
 const categories = [
   {
     id: 'sanitary',
@@ -10,11 +39,11 @@ const categories = [
       "Premium, high-grade sanitaryware sourced from India's leading trusted brands. We stock wash basins, wall-mounted and floor-mounted toilets, urinals, and complete bathroom suites. Whether you need a single unit or bulk supply for a project, we have you covered.",
     items: ['Wash Basins', 'Wall-Mounted Toilets', 'Floor-Mounted Toilets', 'Urinals', 'Bathroom Suites', 'Concealed Cisterns'],
     images: [
-      '/src/all-images/sanitaryware-1.webp',
-      '/src/all-images/sanitaryware-2.jpg',
-      '/src/all-images/sanitaryware-3.jpg',
-      '/src/all-images/sanitaryware-4.jpg',
-      '/src/all-images/sanitaryware-5.jpg',
+      SW1,
+      SW2,
+      SW3,
+      SW4,
+      SW5,
     ],
   },
   {
@@ -24,10 +53,10 @@ const categories = [
       'Steel pipes, GI pipes, PVC pipes, and CPVC pipes in all sizes and pressure ratings. We are one of the leading pipe dealers in Sikar, serving both residential and commercial construction needs. Available in retail and wholesale quantities.',
     items: ['Steel Pipes', 'GI Pipes', 'PVC Pipes', 'CPVC Pipes', 'SWR Pipes', 'Agricultural Pipes'],
     images: [
-      '/src/all-images/pipe-1.jpg',
-      '/src/all-images/pipe-2.jpg',
-      '/src/all-images/pipe-3.jpg',
-      '/src/all-images/pipe-4.png',
+      P1,
+      P2,
+      P3,
+      P4,
     ],
   },
   {
@@ -37,10 +66,10 @@ const categories = [
       'A complete range of pipe fittings including elbow joints, tee fittings, couplings, reducers, unions, and flanges. Compatible with all pipe types we carry. Both threaded and push-fit options available.',
     items: ['Elbow Joints', 'Tee Fittings', 'Couplings', 'GI Pipe Fittings', 'Unions', 'PVC Pipe Fittings'],
     images: [
-      '/src/all-images/fitting-4.png',
-      '/src/all-images/fitting-2.jpg',
-      '/src/all-images/fitting-3.png',
-      '/src/all-images/fitting-1.jpg',
+      F4,
+      F2,
+      F3,
+      F1,
     ],
   },
   {
@@ -50,11 +79,11 @@ const categories = [
       'Everything you need to complete your bathroom — showers, taps, mixers, towel rods, soap dishes, mirrors, and more. Modern designs that combine style with durability.',
     items: ['Showers & Hand Showers', 'Taps & Mixers', 'Towel Rods & Rings', 'Soap Dishes', 'Mirrors', 'Shower Panels'],
     images: [
-      '/src/all-images/bathroom-2.webp',
-      '/src/all-images/bathroom-1.webp',
-      '/src/all-images/bathroom-3.jpg',
-      '/src/all-images/bathroom-4.jpg',
-      '/src/all-images/bathroom-5.jpg',
+      B2,
+      B1,
+      B3,
+      B4,
+      B5,
     ],
   },
   {
@@ -64,8 +93,8 @@ const categories = [
       'General construction and plumbing hardware including hinges, clamps, wall anchors, and miscellaneous items. Essential supplies for any building or renovation project.',
     items: ['Pipe Clamps', 'Wall Anchors', 'Hinges & Latches'],
     images: [
-      '/src/all-images/hardware-1.webp',
-      '/src/all-images/hardware-2.jpg',
+      H1,
+      H2,
     ],
   },
   {
@@ -75,9 +104,9 @@ const categories = [
       "Premium, heavy-duty water storage solutions sourced directly from India's leading trusted brands. We stock multi-layer overhead tanks, compact indoor loft tanks, underground sumps, and high-capacity commercial storage. Whether you need a single unit for your home or bulk supply for a commercial project, we have you covered.",
     items: ['Water Tanks'],
     images: [
-      '/src/all-images/tank-1.jpg',
-      '/src/all-images/tank-2.jpg',
-      '/src/all-images/tank-3.jpg',
+      T1,
+      T2,
+      T3,
     ],
   },
 ];

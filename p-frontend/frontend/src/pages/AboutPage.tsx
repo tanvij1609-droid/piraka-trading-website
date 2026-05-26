@@ -1,6 +1,11 @@
 import { ShieldCheck, Users, Clock, Star, Award, Handshake } from 'lucide-react';
 import bgAbout from '../all-images/bgaboutus.png'
 
+import A1 from '../all-images/aboutus-1.png'
+import A2 from '../all-images/aboutus-2.png'
+import A3 from '../all-images/aboutus-3.png'
+import A4 from '../all-images/aboutus-4.png'
+
 const stats = [
   { icon: Clock, value: '40+', label: 'Years of Experience' },
   { icon: Users, value: 'Thousands', label: 'Satisfied Customers' },
@@ -21,19 +26,19 @@ const brands = [
 
 const storeImages = [
   {
-    src: '/src/all-images/aboutus-1.png',
+    src: A1,
     alt: 'Store interior with product displays',
   },
   {
-    src: '/src/all-images/aboutus-2.png',
+    src: A2,
     alt: 'Wide range of plumbing products',
   },
   {
-    src: '/src/all-images/aboutus-3.png',
+    src: A3,
     alt: 'Hardware and fittings section',
   },
   {
-    src: '/src/all-images/aboutus-4.png',
+    src: A4,
     alt: 'Pipe and fitting inventory',
   },
 ];
