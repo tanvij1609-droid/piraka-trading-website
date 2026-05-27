@@ -4,7 +4,6 @@ const Inquiry = require("../models/Inquiry");
 const axios = require("axios");
 
 router.post("/inquiry", async (req, res) => {
-  console.log(req.body);
 
   try {
     const { name, phone, email, message } = req.body;
