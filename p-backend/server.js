@@ -6,7 +6,7 @@ require("dotenv").config();
 const app = express()
 
 app.use(cors({
-  origin: "https://pirakatradingcompany.netlify.app",
+  origin: "https://pirakatradingcompany.in",
   methods: ["GET", "POST"],
   credentials: true
 }));
